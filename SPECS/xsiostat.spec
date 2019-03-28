@@ -8,6 +8,7 @@ URL:            https://github.com/xenserver/xsiostat/
 Source0:        https://code.citrite.net/rest/archive/latest/projects/XSU/repos/%{name}/archive?at=v%{version}&format=tar.gz&prefix=%{name}-%{version}#/%{name}-%{version}.tar.gz
 Provides: gitsha(https://code.citrite.net/rest/archive/latest/projects/XSU/repos/xsiostat/archive?at=v1.0.1&format=tar.gz&prefix=xsiostat-1.0.1#/xsiostat-1.0.1.tar.gz) = c91a6e510d401d0e42df910505c2b853002ffeb1
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
+BuildRequires:  gcc
 BuildRequires:  blktap-devel
 BuildRequires:  xen-libs-devel
 
