@@ -5,8 +5,12 @@ Summary:        Tool for visualising XenServer VBD metrics
 License:        LGPL+linking exception
 Group:          Development/Other
 URL:            https://github.com/xenserver/xsiostat/
-Source0:        https://code.citrite.net/rest/archive/latest/projects/XSU/repos/%{name}/archive?at=v%{version}&format=tar.gz&prefix=%{name}-%{version}#/%{name}-%{version}.tar.gz
+
+Source0: https://code.citrite.net/rest/archive/latest/projects/XSU/repos/xsiostat/archive?at=v1.0.1&format=tar.gz&prefix=xsiostat-1.0.1#/xsiostat-1.0.1.tar.gz
+
+
 Provides: gitsha(https://code.citrite.net/rest/archive/latest/projects/XSU/repos/xsiostat/archive?at=v1.0.1&format=tar.gz&prefix=xsiostat-1.0.1#/xsiostat-1.0.1.tar.gz) = c91a6e510d401d0e42df910505c2b853002ffeb1
+
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  blktap-devel
 BuildRequires:  xen-libs-devel
@@ -16,7 +20,7 @@ The xsiostat is a tool similar to iostat but that consider XenServer components
 such as I/O rings and memory pool buffers.
 
 %prep 
-%autosetup -p1 -n xsiostat-1.0.1
+%autosetup -p1
 
 %build
 mkdir %{buildroot}
